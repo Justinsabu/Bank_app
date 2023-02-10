@@ -1,0 +1,124 @@
+-create a folder
+-open terminal
+
+PowerShell 7.3.1
+PS D:\Luminar\Angular\Bank\BankServer> npm init  (create package.json) *********************
+
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (bankserver)
+version: (1.0.0)
+description: Bank app backend using nodejs    *****************************************************
+entry point: (index.js)
+test command:
+git repository:
+keywords: Nodejs Express Mongodb             **************************************************
+author:
+license: (ISC)
+About to write to D:\Luminar\Angular\Bank\BankServer\package.json:
+
+{
+  "name": "bankserver",
+  "version": "1.0.0",
+  "description": "Bank app backend using nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Nodejs",
+    "Express",
+    "Mongodb"
+  ],
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) y    ********************************************************************
+
+
+PS D:\Luminar\Angular\Bank\BankServer> npm i express (create nodemodules )**************************
+
+
+
+
+create index.js file  (Bank/BankServer/index.js)  ********************************************
+
+_____________________________________________________________________________________________________
+//Server Creation at index.js file
+
+// import express
+ const express =require('express')
+
+ //create an app using the express
+
+ const app =express()
+
+ //create a port number
+
+ app.listen(3000,()=>{
+    console.log('listening on port 3000');
+ })
+
+ _________________________________________________________________________________________
+
+ PS D:\Luminar\Angular\Bank\BankServer> npm i -g nodemon (install nodemon)*****************
+
+ PS D:\Luminar\Angular\Bank\BankServer> nodemon index.js   (run index.js file)***********************
+
+
+ http response code
+
+   1xx- information
+   2xx-successful
+   3xx-redirection
+   4xx-client erorr
+   5xx-server erorr
+
+______________________________________________________________________________________________________________
+
+
+JWT token - Authentication
+  -to check login or not
+
+login-->token gennerate-->client-->request + token -->server token check?
+
+Install JWT Token - jsonwebtoken
+
+PS D:\Luminar\Angular\Bank\BankServer> npm i jsonwebtoken  *******************************************************************
+
+to generate a new JWT Token - sign()
+
+
+_________________________________________________________________________________________
+DATABASE INTEGRATION
+
+PS D:\Luminar\Angular\Bank\BankServer> npm i mongoose  (connecting node.js and mogodb)**************************
+
+   Install mongoose - npm i mongoose(to connect node with mongoDB)
+   Db connect via mongoose
+   Create a model using mongoose
+
+14.Asynchonous Function Resolving 
+  1)Resolving State - then()
+  2)Rejection State - catch() 
+
+15.CORS - Cross origin resource sharing
+    install cors - npm i cors
+
+
+
+
+
+
+
+
